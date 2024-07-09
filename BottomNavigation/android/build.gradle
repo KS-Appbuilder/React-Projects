@@ -1,0 +1,25 @@
+buildscript {
+    ext {
+        buildToolsVersion = "34.0.0"
+        minSdkVersion = 21
+        compileSdkVersion = 34
+        targetSdkVersion = 34
+        ndkVersion = "25.1.8937393"
+        kotlinVersion = "1.8.0"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+    //       implementation ('com.facebook.fresco:animated-gif:2.6.0')
+    // implementation( 'com.facebook.fresco:animated-webp:2.0.0')
+    // implementation ('com.facebook.fresco:webpsupport:2.0.0')
+
+    }
+}
+
+apply plugin: "com.facebook.react.rootproject"
